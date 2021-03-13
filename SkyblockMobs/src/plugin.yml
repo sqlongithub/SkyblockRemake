@@ -1,0 +1,30 @@
+name: SkyblockMobs
+version: 0.8
+main: me.sql.skyblockmobs.SkyblockMobs
+author: imSQL
+description: Implements mobs as they are in Hypixel SkyBlock
+website: https://www.youtube.com/channel/UC41tJpxv_0TWrdUqw3nAKdw
+commands: 
+    skyblockmobs:
+        description: Skyblock Mobs
+        alias: [sbm, sbmobs]
+        permission: sbmobs.sbm
+        permission-message: §cThis command doesn't exist, or you don't have permission to use it.
+        usage: "§cUsage: /<command> [about/help]"
+    summonmob:
+        description: Summons a mob
+        alias: [smnmob]
+        permission: sbmobs.summonmob
+        permission-message: §cThis command doesn't exist, or you don't have permission to use it.
+        usage: "§cUsage: /<command> [Mob name without spaces]"
+permissions: 
+    sbmods.sbm:
+        description: "Allows you to use and interact with the SkyblockMobs plugin."
+        default: op
+    sbmods.summonmob:
+        description: "Allows you to summon mobs"
+        default: op
+    sbmods.*:
+        children:
+            - sbmobs.sbm
+            - sbmobs.summonmob
