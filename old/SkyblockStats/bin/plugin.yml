@@ -1,0 +1,120 @@
+name: SkyblockStats
+version: 0.9
+main: me.sql.skyblockstats.SkyblockStats
+author: imSQL
+description: Implements stats as they are in Hypixel SkyBlock
+website: https://www.youtube.com/channel/UC41tJpxv_0TWrdUqw3nAKdw
+commands:
+    skyblockstats:
+        description: Skyblock Stats
+        alias: [sbs, sbstats]
+        permission: sbstats.sbs
+        permission-message: §cThis command doesn't exist, or you don't have permission to use it.
+        usage: "§cUsage: /<command> [about/help]"
+    setcc:
+        description: Sets your base Crit Chance
+        permission: sbstats.setcc
+        permission-message: §cThis command doesn't exist, or you don't have permission to use it.
+        usage: "§cUsage: /<command> [value]"
+    setcd:
+        description: Sets your base Crit Damage
+        permission: sbstats.setcd
+        permission-message: §cThis command doesn't exist, or you don't have permission to use it.
+        usage: "§cUsage: /<command> [value]"
+    setfero:
+        description: Sets your base Ferocity
+        permission: sbstats.setfero
+        permission-message: §cThis command doesn't exist, or you don't have permission to use it.
+        usage: "§cUsage: /<command> [value]"
+    setstrength:
+        description: Sets your base Strength
+        permission: sbstats.setstrength
+        permission-message: §cThis command doesn't exist, or you don't have permission to use it.
+        usage: "§cUsage: /<command> [value]"
+    setattackspeed:
+        description: Sets your base Bonus Attack Speed
+        permission: sbstats.setattackspeed
+        permission-message: §cThis command doesn't exist, or you don't have permission to use it.
+        usage: "§cUsage: /<command> [value]"
+    setminingspeed:
+        description: Sets your base Mining Speed
+        permission: sbstats.setminingspeed
+        permission-message: §cThis command doesn't exist, or you don't have permission to use it.
+        usage: "§cUsage: /<command> [value]"
+    setabildmg:
+        description: Sets your base Ability Damage
+        permission: sbstats.setabildmg
+        permission-message: §cThis command doesn't exist, or you don't have permission to use it.
+        usage: "§cUsage: /<command> [value]"
+    setintel:
+        description: Sets your base Intelligence
+        permission: sbstats.setintel
+        permission-message: §cThis command doesn't exist, or you don't have permission to use it.
+        usage: "§cUsage: /<command> [value]"
+    sethp:
+        description: Sets your base Health
+        permission: sbstats.sethp
+        permission-message: §cThis command doesn't exist, or you don't have permission to use it.
+        usage: "§cUsage: /<command> [value]"
+    setdef:
+        description: Sets your base Defense
+        permission: sbstats.setdef
+        permission-message: §cThis command doesn't exist, or you don't have permission to use it.
+        usage: "§cUsage: /<command> [value]"
+    setspeed:
+        description: Sets your base Speed
+        permission: sbstats.setspeed
+        permission-message: §cThis command doesn't exist, or you don't have permission to use it.
+        usage: "§cUsage: /<command> [value]"
+        
+permissions: 
+    sbstats.sbs:
+        description: "Allows you to use and interact with the SkyblockStats plugin."
+        default: op
+    sbstats.setcc:
+        description: "Allows you to change your base Crit Chance"
+        default: true
+    sbstats.setcd:
+        description: "Allows you to change your base Crit Damage"
+        default: true
+    sbstats.setfero:
+        description: "Allows you to change your base Ferocity"
+        default: true
+    sbstats.setstrength:
+        description: "Allows you to change your base Strength"
+        default: true
+    sbstats.setattackspeed:
+        description: "Allows you to change your base Bonus Attack Speed"
+        default: true
+    sbstats.setminingspeed:
+        description: "Allows you to change your base Mining Speed"
+        default: true
+    sbstats.setabildmg:
+        description: "Allows you to change your base Ability Damage"
+        default: true
+    sbstats.setintel:
+        description: "Allows you to change your base Intelligence"
+        default: true
+    sbstats.sethp:
+        description: "Allows you to change your base Health"
+        default: true
+    sbstats.setdef:
+        description: "Allows you to change your base Defense"
+        default: true
+    sbstats.setspeed:
+        description: "Allows you to change your base Speed"
+        default: true
+    sbstats.*:
+        children:
+            - sbstats.sbs
+            - sbstats.setcc
+            - sbstats.setcd
+            - sbstats.setfero
+            - sbstats.setstrength
+            - sbstats.setattackspeed
+            - sbstats.setminingspeed
+            - sbstats.setabildmg
+            - sbstats.setintel
+            - sbstats.sethp
+            - sbstats.setdef
+            - sbstats.setspeed
